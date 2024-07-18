@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.receipt-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    border-top: 5px solid #4CAF50; /* Warna hijau di bagian atas */
+}
+
+.receipt-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.receipt-header h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.receipt-header p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0 0;
+}
+
+.receipt-details {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.receipt-row .label {
+    font-weight: bold;
+    color: #333;
+}
+
+.receipt-row .value {
+    color: #555;
+}
+
+button {
+    background-color: #ec971f;
+    padding: 15px;
+    border-radius: 5px;
+    align-items: end;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+.receipt-footer {
+    font-size: 12px;
+    color: #999;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}

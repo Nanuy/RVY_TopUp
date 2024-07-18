@@ -1,0 +1,173 @@
+/* css/style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.topup-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.topup-list form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.topup-list form input[type="text"],
+.topup-list form input[type="date"],
+.topup-list form input[type="number"],
+.topup-list form button {
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.topup-list form input:focus,
+.topup-list form button:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.topup-list form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.topup-list form button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #f4f4f4; /* Warna latar belakang header */
+    color: black;
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f4f4; /* Warna latar belakang baris genap */
+}
+
+table tr:hover {
+    background-color: #e0e0e0; /* Warna latar belakang saat baris di-hover */
+}
+
+table a {
+    color: inherit; /* Warna default */
+    text-decoration: none;
+}
+
+table a.delete {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+table a.delete:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    header .logo img {
+        height: 40px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .topup-list form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topup-list form input,
+    .topup-list form button {
+        margin: 5px 0;
+        width: 90%;
+    }
+
+    table th,
+    table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
