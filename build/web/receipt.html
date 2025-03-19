@@ -20,22 +20,19 @@
         <div class="receipt-details">
             <div class="order-summary">
                  <div class="receipt-row">
-                <% 
-                    User user = (User) session.getAttribute("user");
-                    double amount = Double.parseDouble(request.getParameter("amount"));
-                %>
+                
                 </div>
                  <div class="receipt-row">
-                <p>Username: <%= user.getUsername() %></p>
+                <p>Username: </p>
                 </div>
                  <div class="receipt-row">
-                <p>Email: <%= user.getEmail() %></p>
+                <p>Email: </p>
                 </div>
                  <div class="receipt-row">
-                <p>Product Name: Steam Wallet IDR <%= amount %></p>
+                <p>Product Name: Steam Wallet IDR </p>
                 </div>
                  <div class="receipt-row">
-                <p>Price: IDR <%= amount %></p>
+                <p>Price: IDR </p>
                 </div>
                  <div class="receipt-row">
                 <p>Payment Method: QRIS</p>
@@ -44,7 +41,7 @@
                 <p>Status: Completed</p>
                 </div>
                 <button>
-                    <a href="index.jsp">
+                    <a href="index.html">
                        Home 
                      
                     </a>

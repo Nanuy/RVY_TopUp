@@ -21,18 +21,18 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.jsp">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <% if (session.getAttribute("user") == null) { %>
-                    <li><a href="login.jsp">Login</a></li>
-                    <li><a href="register.jsp">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
                 <% } else { 
                     User user = (User) session.getAttribute("user");
                     if (user.getUsername().equals("admin")) { %>
                         <li><a href="topups?action=list">Top-Ups</a></li>
-                        <li><a href="admin.jsp">Admin Dashboard</a></li>
+                        <li><a href="admin.html">Admin Dashboard</a></li>
                     <% } else { %>
                     <% } %>
-                    <li><a href="logout.jsp">Logout</a></li>
+                    <li><a href="logout.html">Logout</a></li>
                     <li><span>Halo, <%= user.getUsername() %></span></li>
                 <% } %>
             </ul>
@@ -50,7 +50,7 @@
                     <img src="image/CardSteam.jpg" alt="Steam 50K">
                     <p>IDR 50,000</p>
                     <% if (session.getAttribute("user") == null) { %>
-                        <button onclick="location.href='login.jsp'">Buy Now</button>
+                        <button onclick="location.href='login.html'">Buy Now</button>
                     <% } else { %>
                         <button onclick="location.href='topups?action=checkout&amount=50000'">Buy Now</button>
                     <% } %>
@@ -59,7 +59,7 @@
                     <img src="image/CardSteam.jpg" alt="Steam 100K">
                     <p>IDR 100,000</p>
                     <% if (session.getAttribute("user") == null) { %>
-                        <button onclick="location.href='login.jsp'">Buy Now</button>
+                        <button onclick="location.href='login.html'">Buy Now</button>
                     <% } else { %>
                         <button onclick="location.href='topups?action=checkout&amount=100000'">Buy Now</button>
                     <% } %>
@@ -68,7 +68,7 @@
                     <img src="image/CardSteam.jpg" alt="Steam 200K">
                     <p>IDR 200,000</p>
                     <% if (session.getAttribute("user") == null) { %>
-                        <button onclick="location.href='login.jsp'">Buy Now</button>
+                        <button onclick="location.href='login.html'">Buy Now</button>
                     <% } else { %>
                         <button onclick="location.href='topups?action=checkout&amount=200000'">Buy Now</button>
                     <% } %>
@@ -77,7 +77,7 @@
                     <img src="image/CardSteam.jpg" alt="Steam 500K">
                     <p>IDR 500,000</p>
                     <% if (session.getAttribute("user") == null) { %>
-                        <button onclick="location.href='login.jsp'">Buy Now</button>
+                        <button onclick="location.href='login.html'">Buy Now</button>
                     <% } else { %>
                         <button onclick="location.href='topups?action=checkout&amount=500000'">Buy Now</button>
                     <% } %>
@@ -86,7 +86,7 @@
                     <img src="image/CardSteam.jpg" alt="Steam 1.000K">
                     <p>IDR 1,000,000</p>
                     <% if (session.getAttribute("user") == null) { %>
-                        <button onclick="location.href='login.jsp'">Buy Now</button>
+                        <button onclick="location.href='login.html'">Buy Now</button>
                     <% } else { %>
                         <button onclick="location.href='topups?action=checkout&amount=1000000'">Buy Now</button>
                     <% } %>
@@ -95,7 +95,7 @@
                     <img src="image/CardSteam.jpg" alt="Steam 1.250K">
                     <p>IDR 1,250,000</p>
                     <% if (session.getAttribute("user") == null) { %>
-                        <button onclick="location.href='login.jsp'">Buy Now</button>
+                        <button onclick="location.href='login.html'">Buy Now</button>
                     <% } else { %>
                         <button onclick="location.href='topups?action=checkout&amount=1250000'">Buy Now</button>
                     <% } %>
@@ -104,7 +104,7 @@
                     <img src="image/CardSteam.jpg" alt="Steam 1.500K">
                     <p>IDR 1,500,000</p>
                     <% if (session.getAttribute("user") == null) { %>
-                        <button onclick="location.href='login.jsp'">Buy Now</button>
+                        <button onclick="location.href='login.html'">Buy Now</button>
                     <% } else { %>
                         <button onclick="location.href='topups?action=checkout&amount=1500000'">Buy Now</button>
                     <% } %>
@@ -113,7 +113,7 @@
                     <img src="image/CardSteam.jpg" alt="Steam 1.750K">
                     <p>IDR 1,750,000</p>
                     <% if (session.getAttribute("user") == null) { %>
-                        <button onclick="location.href='login.jsp'">Buy Now</button>
+                        <button onclick="location.href='login.html'">Buy Now</button>
                     <% } else { %>
                         <button onclick="location.href='topups?action=checkout&amount=1750000'">Buy Now</button>
                     <% } %>
