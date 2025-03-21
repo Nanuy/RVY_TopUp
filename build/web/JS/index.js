@@ -8,10 +8,10 @@
 
         // Jika menu aktif, dorong konten ke bawah
         if (navMenu.classList.contains('active')) {
-            mainContent.style.marginTop = "200px"; // Sesuaikan dengan tinggi menu
+            mainContent.style.marginTop = "35vh"; // Sesuaikan dengan tinggi menu
         } else {
             mainContent.style.marginTop = "0"; // Kembalikan ke posisi awal
-        }
+        }   
     });
 
     // Tutup menu saat salah satu link diklik & kembalikan posisi main

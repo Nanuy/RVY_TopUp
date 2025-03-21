@@ -6,5 +6,6 @@ $(document).ready(function () {
     if (storedProduct) {
         $("#product").text("Product Name: " + storedProduct.name);
         $("#Price").text("Price: IDR " + storedProduct.price);
+        $("#Item1").text("Item: " + storedProduct.item1);
     }
 });

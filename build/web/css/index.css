@@ -10,11 +10,12 @@ header {
     width: 100%;
     max-width: 100%;
     background-color: #ff4654;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    position: absolute;
     z-index: 1000;
 }
 
@@ -30,7 +31,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    padding-top: 7px;
+    /* position: relative; */
+    z-index: 100;
+    background-color: #ff4654;
     
 }
 
@@ -68,11 +72,12 @@ h2{
     background-color: white;
 }
 
-header .logo img {
-    height: 50px;
+nav .logo img {
+    /* height: 50px; */
+    width: 3rem;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 nav ul {
@@ -98,13 +103,6 @@ nav ul li span {
     color: white;
     padding: 10px 20px;
     font-size: 16px;
-}
-
-.main {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
 }
 
 .container {
@@ -291,14 +289,16 @@ footer {
     }
 
     .nav-menu {
-        position: fixed;
-        top: -100%;
+        position: absolute;
+        top: -170px;
+        z-index: -99;
         gap: 0;
         flex-direction: column;
-        background-color: black;
+        background-color: #333;
         width: 100%;
         text-align: center;
         transition: top 0.3s;
+    
         
 
     }
