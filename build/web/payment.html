@@ -28,20 +28,17 @@
         <section class="payment">
             <h2>Payment QRIS</h2>
             <div class="order-summary">
-                <% 
-                    User user = (User) session.getAttribute("user");
-                    double amount = Double.parseDouble(request.getParameter("amount"));
-                %>
-                <p>Username: <%= user.getUsername() %></p>
-                <p>Email: <%= user.getEmail() %></p>
-                <p>Product Name: Steam Wallet IDR <%= amount %></p>
-                <p>Price: IDR <%= amount %></p>
+                
+                <p>Username: </p>
+                <p>Email: </p>
+                <p>Product Name: Steam Wallet IDR </p>
+                <p>Price: IDR </p>
                 <p>Payment Method: QRIS</p>
                 <div class="qris-code">
                     <img src="image/QRIS.png" alt="QRIS Code">
                 </div>
                 <form action="topups?action=confirmPayment" method="post">
-                    <input type="hidden" name="amount" value="<%= amount %>">
+                    <input type="hidden" name="amount" value="">
                     <input type="submit" value="Sudah Bayar">
                 </form>
             </div>

@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,9 +20,9 @@
             <div class="form-container sign-in-container">
                 <section class="login">
                     <h1>Sign In</h1>
-                    <% if (request.getAttribute("errorMessage") != null) { %>
-                        <p style="color: red;"><%= request.getAttribute("errorMessage") %></p>
-                    <% } %>
+                    
+                        <p style="color: red;"></p>
+                   
                     <form action="users?action=login" method="post">
                         <div>
                             <input placeholder="Username" type="text" id="username" name="username" required>

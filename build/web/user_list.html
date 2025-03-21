@@ -1,7 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.util.List" %>
-<%@ page import="model.User" %>
-<%@ page session="true" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,23 +40,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <%
-                        List<User> userList = (List<User>) request.getAttribute("userList");
-                        for (User user : userList) {
-                    %>
+                    
                     <tr>
-                        <td><%= user.getId() %></td>
-                        <td><%= user.getUsername() %></td>
-                        <td><%= user.getEmail() %></td>
-                        <td><%= user.getStatus() %></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td>
-                            <a href="users?action=edit&id=<%= user.getId() %>" class="btn edit-btn">Edit</a>
-                            <a href="users?action=delete&id=<%= user.getId() %>" class="btn delete-btn" onclick="return confirm('Are you sure?')">Deactivate</a>
+                            <a href="" class="btn edit-btn">Edit</a>
+                            <a href="" class="btn delete-btn" onclick="return confirm('Are you sure?')">Deactivate</a>
                         </td>
                     </tr>
-                    <%
-                        }
-                    %>
                 </tbody>
             </table>
         </section>
