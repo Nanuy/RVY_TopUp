@@ -18,8 +18,8 @@
             <div class="order-summary">
                 <p>Username: User</p>
                 <p>Email: user@example.com</p>
-                <p>Product Name: Steam Wallet IDR 100000</p>
-                <p>Price: IDR 100000</p>
+                <p id="product"></p>
+                <p id="Price"></p>
                 <p>Payment Method: QRIS</p>
                 <form action="topups?action=pay" method="post">
                     <input type="hidden" name="amount" value="100000">
@@ -28,5 +28,7 @@
             </div>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/checkout.js"></script>
 </body>
 </html>

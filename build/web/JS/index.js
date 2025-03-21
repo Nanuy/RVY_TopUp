@@ -20,3 +20,18 @@
         navMenu.classList.remove('active');
         mainContent.style.marginTop = "0"; // Kembalikan ke posisi awal
     }));
+
+ 
+    $(document).ready(function () {
+        $("#buyNow").click(function () {
+            // Ambil data dari atribut data- di button
+            let product = {
+                id: $(this).data("product-id"),
+                name: $(this).data("product-name"),
+                price: $(this).data("price")
+            };
+
+            // Simpan ke localStorage sebagai JSON string
+            localStorage.setItem("selectedProduct", JSON.stringify(product));
+        });
+    });
