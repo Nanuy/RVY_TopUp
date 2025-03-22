@@ -11,36 +11,38 @@
         <div class="logo">
             <img src="image/logo.png" alt="Logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
-                        <li><a href="admin.html">Admin Dashboard</a></li>
-                        <li><a href="topups?action=list">Top-Ups</a></li>
-                    <li><a href="logout.html">Logout</a></li>
-                    <li><span>Halo, ></span></li>
-                
-            </ul>
-        </nav>
     </header>
     <main>
         <section class="payment">
-            <h2>Payment QRIS</h2>
+            <h2>Payment Success</h2>
             <div class="order-summary">
-                
-                <p>Username: </p>
-                <p>Email: </p>
-                <p>Product Name: Steam Wallet IDR </p>
-                <p>Price: IDR </p>
-                <p>Payment Method: QRIS</p>
-                <div class="qris-code">
-                    <img src="image/QRIS.png" alt="QRIS Code">
+                <h3>Order Summary</h3>
+                <div class="summary-item">
+                    <span>Username:</span>
+                    <span>User</span>
                 </div>
-                <form action="topups?action=confirmPayment" method="post">
-                    <input type="hidden" name="amount" value="">
-                    <input type="submit" value="Sudah Bayar">
-                </form>
+                <div class="summary-item">
+                    <span>Email:</span>
+                    <span>user@example.com</span>
+                </div>
+                <div class="summary-item">
+                    <span>Product Name:</span>
+                    <span>Steam Wallet IDR</span>
+                </div>
+                <div class="summary-item">
+                    <span>Price:</span>
+                    <span>IDR 100,000</span>
+                </div>
+                <div class="summary-item">
+                    <span>Payment Method:</span>
+                    <span>QRIS</span>
+                </div>
+            </div>
+            <div class="qris-code">
+                <img src="PaymentSuccess.jpg" alt="QRIS Code">
+            </div>
+            <div class="button-container">
+                <a href="index.html" class="payment-button">Home</a>
             </div>
         </section>
     </main>

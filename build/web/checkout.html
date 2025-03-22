@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Checkout Payment</title>
     <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
@@ -14,18 +14,37 @@
     </header>
     <main>
         <section class="payment">
-            <h2>Checkout</h2>
+            <h2>Checkout Payment</h2>
             <div class="order-summary">
-                <p>Username: User</p>
-                <p>Email: user@example.com</p>
-                <p id="product"></p>
-                <p id="Price"></p>
-                <p>Payment Method: QRIS</p>
-                <form action="topups?action=pay" method="post">
-                    <input type="hidden" name="amount" value="100000">
-                    <input type="submit" value="Bayar">
-                </form>
+                <h3>Order Summary</h3>
+                <div class="summary-item">
+                    <span>Username:</span>
+                    <span>User</span>
+                </div>
+                <div class="summary-item">
+                    <span>Email:</span>
+                    <span>user@example.com</span>
+                </div>
+                <div class="summary-item">
+                    <span>Product:</span>
+                    <span id="product">Product Name</span>
+                </div>
+                <div class="summary-item">
+                    <span>Price:</span>
+                    <span id="price">Rp 100,000</span>
+                </div>
+                <div class="summary-item">
+                    <span>Payment Method:</span>
+                    <span>QRIS</span>
+                </div>
             </div>
+            <div class="qris-code">
+                <img src="image/qris.png" alt="QRIS Code">
+            </div>
+            <form action="topups?action=pay" method="post">
+                <input type="hidden" name="amount" value="100000">
+                <input type="submit" value="Check Status Payment">
+            </form>
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
