@@ -23,15 +23,26 @@
 
  
     $(document).ready(function () {
-        $("#buyNow").click(function () {
-            // Ambil data dari atribut data- di button
+        $(document).on("click", ".buyNow", function () {
+            // Ambil data dari tombol yang diklik
             let product = {
                 id: $(this).data("product-id"),
                 name: $(this).data("product-name"),
-                price: $(this).data("price")
+                price: $(this).data("price"),
+                item1: $(this).data("item1"),
+                item2: $(this).data("item2"),
+                item3: $(this).data("item3"),
+                item4: $(this).data("item4"),
+                item5: $(this).data("item5")
             };
-
-            // Simpan ke localStorage sebagai JSON string
+    
+            console.log("Product selected:", product); // Debugging
+    
+            // Simpan ke localStorage
             localStorage.setItem("selectedProduct", JSON.stringify(product));
+    
+            // Redirect ke checkout
+            window.location.href = "checkout.html";
         });
     });
+    
