@@ -92,9 +92,17 @@ main {
     background-color: #fff;
 }
 
+/* Button Container */
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 /* Button Styles */
-form input[type="submit"] {
-    background-color: #000080;
+.payment-button {
+    background-color: #000080; /* Warna biru tua */
     color: white;
     border: none;
     padding: 12px 24px;
@@ -102,12 +110,15 @@ form input[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    width: 100%;
+    text-align: center;
+    text-decoration: none;
     transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
 }
 
-form input[type="submit"]:hover {
-    background-color: #0000ff;
+.payment-button:hover {
+    background-color: #0000ff; /* Warna biru yang lebih terang saat hover */
 }
 
 /* Responsive Styles */
@@ -133,7 +144,7 @@ form input[type="submit"]:hover {
         height: 150px;
     }
 
-    form input[type="submit"] {
+    .payment-button {
         padding: 10px 20px;
         font-size: 14px;
     }
