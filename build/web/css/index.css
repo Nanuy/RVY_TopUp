@@ -4,6 +4,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 header {
@@ -107,9 +108,9 @@ nav ul li span {
 
 .container {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.596);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Add blur effect */
 }
 
 .banner img {
@@ -174,7 +175,7 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .footer-content {
@@ -251,6 +252,12 @@ footer {
 
 .hamburger.active div:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.title {
+    font-size: 40px;
+    margin: 5px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 1024px) {
@@ -339,6 +346,11 @@ footer {
     .footer-section a {
         font-size: 12px;
     }
+
+    .title {
+        font-size: 30px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -363,4 +375,14 @@ footer {
     .footer-section a {
         font-size: 10px;
     }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 21px;
+    }
+
+    
 }
